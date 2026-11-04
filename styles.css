@@ -14,3 +14,41 @@
     line-height: 1.6;
   }
 }
+
+/* Consolidated accessibility and small-screen fixes. */
+section[id], main[id]{scroll-margin-top:100px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #b67b00;outline-offset:4px}
+.skip-link{position:fixed;top:-100px;left:16px;z-index:100;background:white;padding:12px 18px}.skip-link:focus{top:12px}
+.journey-panel ol{text-align:left;max-width:860px;margin:32px auto;padding-left:1.6rem}.journey-panel li{margin-bottom:16px}
+.plan-card h3{font:600 29px/1.2 "Playfair Display",serif}.hero-actions{margin-top:24px}
+.contact-panel a{overflow-wrap:anywhere}.btn{white-space:normal;text-align:center;max-width:100%}
+@media(max-width:480px){.site-header{padding:16px}.brand{font-size:15px}.plan-card{padding:24px}.steps div{padding:18px}.contact-panel form{padding:24px}.hero{padding-left:22px;padding-right:22px}.hero h1{font-size:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.founder-layout{display:grid;grid-template-columns:minmax(220px,340px) minmax(0,1fr);gap:48px;align-items:start}.founder-photo{width:100%;height:auto;border-radius:18px}.founder-layout h2{font-size:clamp(2rem,4vw,3.5rem)}.founder-layout p{line-height:1.8;margin-bottom:18px}@media(max-width:760px){.founder-layout{grid-template-columns:1fr;gap:28px}.founder-photo{max-width:340px;margin:auto}}
+
+/* Compact homepage section spacing. */
+#main > .section{padding-top:60px;padding-bottom:60px}#main > .reflection{padding-top:28px;padding-bottom:40px}#main .section-heading{margin-bottom:32px}#main .section-kicker{margin-bottom:28px}#main .reflection-card{padding:44px}#main .hero{min-height:auto;padding-top:125px;padding-bottom:75px}#main .scroll-note{bottom:20px}@media(max-width:860px){#main > .section{padding-top:42px;padding-bottom:42px}#main > .reflection{padding-top:24px;padding-bottom:28px}#main .reflection-card{padding:30px 24px}#main .hero{padding-top:112px;padding-bottom:64px}}
+
+/* Stronger homepage text contrast. */
+#main .plan-card:not(.featured) p,#main .plan-card:not(.featured) .plan-list,#main .plan-card:not(.featured) .plan-meta{color:#263c35;font-weight:500}
+#main .plan-card:not(.featured) .plan-label{color:#31594b}
+#main .plan-card.featured p,#main .plan-card.featured .plan-meta,#main .plan-card.featured .plan-list,#main .plan-card.featured .plan-label{color:#fff;font-weight:500}
+#main .plan-card h3,#main .plan-card h4{font-weight:700}
+#main .service-card p,#main .prose,#main .section-heading>p:last-child,#main .service-note,#main .service-plans-heading p,#main .feature-grid p,#main .accordion details p{color:#30483f;font-weight:500}
+#main .plan-card .btn{font-weight:600;opacity:1}
+.site-header .nav a{opacity:1}
+
+/* Supplied brand artwork: retain original proportions and colours. */
+.brand-logo{display:block;width:280px;max-width:100%;height:auto}.site-header .brand{flex-shrink:0}.footer-brand-logo{display:block;width:240px;height:auto;margin:0 auto 28px}.discovery-brand-footer{padding:30px;text-align:center;background:#fff}@media(max-width:768px){.brand-logo{width:210px}.discover-header{gap:12px;flex-wrap:wrap}.footer-brand-logo{width:200px}}
+
+/* Final visual homepage */
+.site-header{background:#fff;padding-top:8px;padding-bottom:8px}.brand-logo{width:260px}.hero{display:grid;grid-template-columns:1fr 1fr;gap:46px;padding:170px 6vw 70px;align-items:center;background:#f5f1e7}.hero-content{text-align:left;max-width:660px}.hero h1{font-size:clamp(42px,5vw,72px)}.hero-copy{font-size:19px;color:#30483f}.hero-actions{justify-content:flex-start}.hero-small{font-size:14px;margin:24px 0 0}.hero-visual{margin:0;position:relative;border-radius:32px;overflow:hidden;background:#09283e;box-shadow:0 22px 50px #102a3026}.hero-visual img{display:block;width:100%;height:410px;object-fit:cover}.hero-visual figcaption{padding:24px 28px;color:#fff;font-family:Georgia,serif;font-size:28px}.hero-visual figcaption span{display:block;font-family:Arial,sans-serif;font-size:13px;letter-spacing:.13em;margin-top:8px;color:#f7cf73}.welcome-grid,.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}.welcome-grid article{background:#fff;padding:28px;border-radius:20px;border-top:4px solid #dba929}.welcome-grid article span{color:#916f16;font-weight:700}.welcome-grid h3{font-size:23px;margin:12px 0}.welcome-grid p{color:#30483f}.founder-layout{align-items:center;gap:48px}.founder-photo{border-radius:28px;background:#fff;box-shadow:0 16px 40px #17322c15;object-fit:contain}.plan-card{border-radius:22px;border:1px solid #c9d7cf;background:#fff;box-shadow:0 10px 25px #17322c09;border-top:5px solid #17322c}.plan-card h3{font-size:26px}.plan-card .btn{margin-top:16px}.plan-label{color:#31594b}.review-preview,.discovery-banner{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:38px;background:#e8eee8;border-radius:24px}.review-preview h2,.discovery-banner h2{font-size:clamp(30px,3vw,46px)}.homepage-details{border:1px solid #c8d5cd;border-radius:16px;background:#fff;padding:22px}.homepage-details>summary{cursor:pointer;font-size:22px;font-weight:700}.homepage-details[open]>summary{margin-bottom:28px}#main>.section:has(>.homepage-details){padding-top:12px;padding-bottom:12px}.reviews-main{max-width:1120px;margin:auto;padding:65px 28px}.discover-header{display:flex;align-items:center;justify-content:space-between;padding:15px 5vw;background:#fff}.reviews-main h1{font-size:clamp(42px,6vw,76px)}.reviews-grid{grid-template-columns:1fr 1fr;margin:40px 0}.reviews-grid blockquote{margin:0;padding:32px;background:#fff;border-radius:20px;border-left:5px solid #dba929}.reviews-grid blockquote p{font-size:23px;color:#17322c}.reviews-grid cite{font-size:14px;font-style:normal}.reviews-main .discovery-banner{margin-top:55px}section{scroll-margin-top:145px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:150px 24px 48px;gap:30px}.hero-visual img{height:300px}.welcome-grid{grid-template-columns:1fr}.review-preview,.discovery-banner{flex-direction:column;align-items:flex-start;padding:26px}.reviews-grid{grid-template-columns:1fr}.brand-logo{width:210px}.founder-layout{gap:26px}.hero h1{font-size:46px}.hero-visual figcaption{font-size:25px}.reviews-main{padding-top:40px}}
+
+/* Language choice on standalone Discover Yourself reading page */
+.discover-header .lang-switch{display:flex;align-items:center;gap:2px;padding:4px;border:1px solid #a6c5b8;background:#f3f8f4;border-radius:999px;white-space:nowrap}
+.discover-header .lang-switch a{display:inline-flex;align-items:center;justify-content:center;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:750;color:#325d50;min-height:30px}
+.discover-header .lang-switch a[aria-current="true"]{background:#105a4e;color:#fff}
+.discover-header .lang-switch a:focus-visible{outline:3px solid #cfa84d;outline-offset:3px}
+@media(max-width:560px){.discover-header{gap:10px!important}.discover-header .brand-logo{width:155px}.discover-header>a:not(.brand){font-size:12px}.discover-header .lang-switch a{font-size:11px;padding:4px 6px}}

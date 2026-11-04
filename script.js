@@ -13,7 +13,8 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
 document.getElementById('contactForm')?.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -25,4 +26,12 @@ document.getElementById('contactForm')?.addEventListener('submit', (event) => {
   );
   window.location.href = `mailto:connect@lifestyleforlifetime.com?subject=${subject}&body=${body}`;
   document.getElementById('formNote').textContent = 'Your email app should open with the enquiry prepared.';
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.focus();
+  }
 });
