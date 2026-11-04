@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="192" viewBox="0 0 264 192" role="img" aria-hidden="true">
+<defs>
+<linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bce4f6"/><stop offset="1" stop-color="#2f94bd"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#65b5dd"/><stop offset="1" stop-color="#135783"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#c7dd91"/><stop offset="1" stop-color="#538e59"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0ab"/><stop offset="1" stop-color="#ecab36"/></linearGradient>
+<linearGradient id="soft" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffef7"/><stop offset="1" stop-color="#edf9fa"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff0af" stop-opacity=".75"/><stop offset="1" stop-color="#f8f4e9" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<ellipse cx="131" cy="167" rx="90" ry="9" fill="#d4dfe2" opacity=".3"/>
+
+<circle cx="126" cy="82" r="66" fill="url(#glow)"/>
+<path d="M38 144q31-17 92 0 48-17 93 0v24q-47-14-93 2-49-17-92-2Z" fill="#dceff5" stroke="#78b4cc" stroke-width="3"/>
+<path d="M131 144v25M57 153q30-7 58 0M146 153q27-7 58 0" stroke="#6ab1ca" stroke-width="2.5" fill="none"/>
+<circle cx="125" cy="77" r="44" fill="#fffdf6" stroke="#2b86ad" stroke-width="8"/>
+<path d="M155 108 185 138" stroke="#1d638e" stroke-width="14" stroke-linecap="round"/>
+<circle cx="125" cy="77" r="34" fill="#f6fbf9"/>
+<path d="M123 104q-5-39 3-59" stroke="#4c8d62" stroke-width="4" fill="none"/>
+<path d="M125 69q-29-22-34-14 8 18 33 22M126 62q19-25 31-22-1 20-31 29" fill="url(#green)"/>
+<path d="M113 91q12 12 24-2" fill="none" stroke="#e6ad55" stroke-width="3" stroke-linecap="round"/>
+
+</svg>
