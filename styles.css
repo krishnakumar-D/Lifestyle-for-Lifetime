@@ -52,3 +52,37 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .discover-header .lang-switch a[aria-current="true"]{background:#105a4e;color:#fff}
 .discover-header .lang-switch a:focus-visible{outline:3px solid #cfa84d;outline-offset:3px}
 @media(max-width:560px){.discover-header{gap:10px!important}.discover-header .brand-logo{width:155px}.discover-header>a:not(.brand){font-size:12px}.discover-header .lang-switch a{font-size:11px;padding:4px 6px}}
+
+
+/* 11 Nov visual clarity refinement: retains approved content and layout. */
+:root{--lfl-ink:#17382f;--lfl-text:#293f39;--lfl-teal:#176b62;--lfl-gold:#b88929;--lfl-ivory:#f7f3e9}
+body{color:var(--lfl-ink);background:var(--lfl-ivory);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body p,body li,body dd,body blockquote{color:var(--lfl-text);font-size:clamp(16px,1.12vw,19px);line-height:1.75}
+body h1,body h2,body h3{color:#17382f;text-wrap:balance;letter-spacing:-.018em}
+body h1{line-height:1.12}body h2{line-height:1.17}body h3{line-height:1.25}
+body .eyebrow,body .section-kicker{color:#176b62;opacity:1;font-weight:800;letter-spacing:.12em;font-size:12px}
+.site-header{background:rgba(250,248,242,.97);box-shadow:0 3px 18px rgba(18,51,43,.10);border-bottom:1px solid #d5dfd8}
+.site-header .nav a{color:#1d3d34;opacity:1;font-weight:650}
+.site-header .nav a:hover{color:#11685e}
+.hero{background:linear-gradient(118deg,#f4ecdc 0%,#f9f6ef 52%,#e5f1ea 100%)}
+.hero h1,.hero h1 em{color:#17382f}.hero h1 em{color:#126f62}
+.hero-copy,.hero-small,.prose,.section-heading>p:last-child,.feature-grid p,.card p,.welcome-grid p,.accordion details p{color:#293f39!important;opacity:1!important}
+.btn-primary,.nav .btn-primary{background:#12665a;color:#fff;border-color:#12665a;box-shadow:0 6px 16px rgba(18,102,90,.18)}
+.btn-secondary,.nav-cta{border:1.5px solid #176b62;color:#14574e;background:#fff}
+.btn:hover,.nav-cta:hover{filter:brightness(.94);transform:translateY(-1px)}
+.section{background-color:#faf8f2}.section:nth-of-type(even){background-color:#edf3ed}
+.section.cards-section,.cards-section{background:#f2eee4}
+.reflection-card,.journey,.review-preview,.discovery-banner{background:#dcece4}
+.card,.welcome-grid article,.plan-card,.homepage-details{background:#fffdf8;border-color:#b9d0c3;box-shadow:0 9px 26px rgba(20,55,44,.09)}
+.statement,.pathway,.dark-section,.contact{background:#153d34;color:#fff}
+.statement h1,.statement h2,.statement h3,.pathway h1,.pathway h2,.pathway h3,.dark-section h1,.dark-section h2,.dark-section h3,.contact h1,.contact h2,.contact h3{color:#fff}
+.statement p,.pathway p,.dark-section p,.contact p,.timeline-item p{color:#e6f0e9!important}
+.timeline-item{background:#153d34}
+/* Preserve approved image composition while improving perceived clarity. */
+main img:not(.brand-logo):not(.footer-brand-logo),.section img:not(.brand-logo),.lfl-seven-art{image-rendering:auto}
+.hero-visual,.founder-photo,.lfl-seven-art{box-shadow:0 12px 32px rgba(20,55,44,.16)}
+.lfl-seven-art{border-radius:18px;border:1px solid #d2dfd5;background:#fffdf8}
+/* Make text inside cards and detail sections legible on ordinary monitors. */
+.service-card p,.service-note,.service-plans-heading p,.plan-meta,.plan-list,.small,.copyright{opacity:1!important;color:#344a43}
+footer{background:#e9eee7}footer a{color:#194e43}
+@media(max-width:860px){body p,body li{font-size:16px;line-height:1.7}.section{padding-left:22px;padding-right:22px}.site-header .nav{background:#faf8f2}}
